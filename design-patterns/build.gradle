@@ -24,7 +24,7 @@ apply plugin: 'application'
 apply plugin: 'java-library'
 //apply plugin: 'checkstyle'
 
-mainClassName = 'main.java.Main'
+mainClassName = 'main.java.assignment5.Main'
 
 compileJava.options.encoding = 'UTF-8'
 
@@ -48,7 +48,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes "Main-Class": "main/java/Main",
+        attributes "Main-Class": "main/java/assignment5/Main",
         'Implementation-Title': 'Gradle'
     }
  

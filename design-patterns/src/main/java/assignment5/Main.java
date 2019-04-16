@@ -1,4 +1,5 @@
-package assignment5;
+package main.java.assignment5;
+
 import Factory.HondaMaker;
 
 public class Main {
