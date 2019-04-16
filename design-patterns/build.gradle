@@ -12,13 +12,10 @@ plugins {
 
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'java-library'
 
 mainClassName = 'main.java.Main'
 
-plugins {
-    // Apply the java-library plugin to add support for Java Library
-    id 'java-library'
-}
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
