@@ -10,7 +10,6 @@ buildscript {
     	}
     }
     dependencies {
-        classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.2'
         classpath "gradle.plugin.com.bulwinkel.gradle:git-version:0.3.1"
     }
 }
@@ -23,15 +22,14 @@ apply plugin: 'java'
 apply plugin: 'application'
 //apply plugin: 'checkstyle'
 
-mainClassName = 'main.java.assignment5.Main'
+mainClassName = 'main/java/assignment5/Main'
 
 compileJava.options.encoding = 'UTF-8'
 
 // In this section you declare where to find the dependencies of your project
+// Repositories and dependencies for code go here
 repositories {
-    // Use jcenter for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+  mavenCentral()
 }
 
 dependencies {
