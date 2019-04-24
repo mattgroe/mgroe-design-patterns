@@ -1,23 +1,24 @@
 package main.java.assignment5;
 
-import Factory.HondaMaker;
-import GUI.CarGUI;
+import main.java.Factory.Car;
+import main.java.Factory.CarFactory;
+import main.java.Factory.Volkswagen;
 
 public class Main {
 
     public static void main(String[] args) {
-        //create
-        // HondaMaker Accord = new HondaMaker("Perry Honda", "Accord");
-        // Accord.setPaint("Black");
-        // Accord.setCarType("Sedan");
-        // Accord.setEngine(6);
-        // Accord.setChassis("Steel");
-        // Accord.setTransmission("Manual");
-        // Accord.setTire(19);
 
-        // Accord.calcPrice();
+        System.out.println("Creating car");
+        Car car;
 
-        CarGUI ui = new CarGUI();
+        System.out.println("Creating volkswagen factory");
+        CarFactory volksFactory = null;
+
+        System.out.println("Creating volkswagen car");
+        volksFactory = new Volkswagen("Volkswagen", "Sport", "Futuristic");
+        car = volksFactory.getCar();
+        System.out.println(car);
+        
     }
 
 }
